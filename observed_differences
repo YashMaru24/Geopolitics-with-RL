@@ -1,0 +1,39 @@
+1 On Policy vs Off Policy Updates
+
+Q learning is an off policy algorithm:
+
+Learns the value of the optimal policy regardless of the behavior policy.
+
+Assumes future actions will always be optimal.
+
+SARSA is an on policy algorithm:
+
+Learns the value of the policy actually being followed.
+
+Incorporates exploration directly into learning.
+
+As a result, SARSA internalizes the risk introduced by epsilon greedy exploration.
+
+Role of Exploration in Value Updates
+In Qlearning, exploration affects data collection but not the update target.
+
+In SARSA, exploration affects both action selection and value updates.
+
+This means SARSA learns values that reflect:
+
+“What actually happens when I follow this epsilon greedy policy.”
+
+Effect of Stochastic Transitions
+FrozenLake has stochastic transitions:
+
+The same action can lead to different outcomes.
+
+Risky paths near holes can easily lead to failure.
+
+Implications:
+
+Q learning may overestimate the value of risky paths.
+
+SARSA naturally penalizes risky transitions because exploratory actions can lead to falling into holes.
+
+Thus, SARSA produces risk averse behavior, while Q learning is more risk seeking.
