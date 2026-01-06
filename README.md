@@ -11,8 +11,8 @@ To deeply understand **Q-learning (off-policy)** and **SARSA (on-policy)** algor
 
 ### Environment
 
-* **FrozenLake ** for Q-learning experiments
-* **FrozenLake ** for Q-learning vs SARSA comparison
+* FrozenLake  for Q-learning experiments
+* FrozenLake  for Q-learning vs SARSA comparison
 * Stochastic transitions (`is_slippery=True`)
 
 ### Key Experiments
